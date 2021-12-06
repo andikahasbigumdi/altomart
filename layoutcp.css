@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  padding: 5px;
+  /* border: 1px solid teal; */
+}
+
+.menu {
+  text-align: center;
+}
+.logo {
+  text-align: center;
+  margin-top: 10px;
+  height: auto;
+  /* border: 3px solid green; */
+}
+.logo img {
+  width: 100%;
+}
+
+.content {
+  background-color: rgba(115, 22, 158, 0.699);
+  height: 800px;
+  margin: 0 auto;
+  overflow: auto;
+}
+.content h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: rgba(115, 22, 158, 0.699);
+  min-height: 50px;
+  padding: 20px;
+  text-align: center;
+}
+.footer p {
+  color: white;
+  font-size: large;
+}
+
+.thumbnail {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  width: 225px;
+  margin: 10px;
+  float: left;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 150px;
+}
+
+ul.submenu {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+  position: absolute;
+  width: auto;
+  padding: 0;
+  display: none;
+}
+ul.submenu li {
+  display: block;
+  position: relative;
+}
+
+ul.submenu li a {
+  display: block;
+  padding: 5px 10px;
+}
+
+.menu ul li:hover ul.submenu {
+  display: block;
+}
+
+/* .jumbotron {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  background-color: #aaa;
+  background-size: cover;
+  background-image: url(Backgorund/backgorudperushaan.jpg);
+} */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.overlay h2 {
+  position: absolute;
+  margin-bottom: 300px;
+}
+
+.jumbotron h2,
+.jumbotron p {
+  position: relative;
+}
+
+.animasi {
+  position: absolute;
+  top: 15px;
+  right: 10%;
+  margin-left: 20px;
+}
+.animasi img {
+  position: absolute;
+  -webkit-animation-name: spinnerRotate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-iteration-function: linear;
+  width: 40px;
+  height: 40px;
+}
+
+/* kodingan animasi */
+@keyframes spinnerRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.form {
+  text-align: center;
+  margin: 20px;
+}
+
+.form input {
+  border-radius: 5px;
+  width: 50%;
+  height: 30px;
+}
+
+.form textarea {
+  width: 50%;
+  height: 100px;
+}
+.form p {
+  font-size: 20px;
+  font-style: bold;
+}
+.submit input {
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: yellow;
+  color: black;
+  font-size: 15px;
+  text-transform: uppercase;
+}
